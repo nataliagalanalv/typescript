@@ -1,0 +1,19 @@
+
+ {
+  "compilerOptions": {
+    
+    "target": "ES2022",                      // JavaScript version
+    "module": "NodeNext",                    // Node.js
+    "outDir": "./dist",                      // Directorio de salida para el código transpilado.
+    "rootDir": "./src",                      // Directorio raíz del código fuente.
+    
+    "strict": true,                          // Habilita todas las comprobaciones estrictas
+    "noImplicitAny": true,                   // Evita que las variables no tipadas sean 'any'
+    
+    "esModuleInterop": true,                 // Facilita la importación de módulos antiguos
+    "skipLibCheck": true,                    // Acelera la compilación saltando chequeos de librerías
+    "forceConsistentCasingInFileNames": true // Evita errores de mayúsculas/minúsculas en archivos
+
+  },
+  "include": ["src/**/*"]        
+  }       
