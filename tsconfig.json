@@ -1,11 +1,10 @@
-
- {
+{
   "compilerOptions": {
     
     "target": "ES2022",                      // JavaScript version
     "module": "NodeNext",                    // Node.js
+    "rootDir": "./",                         // Directorio raíz del código fuente.
     "outDir": "./dist",                      // Directorio de salida para el código transpilado.
-    "rootDir": "./src",                      // Directorio raíz del código fuente.
     
     "strict": true,                          // Habilita todas las comprobaciones estrictas
     "noImplicitAny": true,                   // Evita que las variables no tipadas sean 'any'
@@ -15,5 +14,5 @@
     "forceConsistentCasingInFileNames": true // Evita errores de mayúsculas/minúsculas en archivos
 
   },
-  "include": ["src/**/*"]        
-  }       
+  "include": ["modulo-1/src/**/*", "modulo-2/src/**/*"]
+}       
