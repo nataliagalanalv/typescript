@@ -16,9 +16,7 @@ interface Asignatura {
     nombre: string;
     creditos: number;
 }
-
-type EstadoMatricula = 'MatriculaActiva' | 'MatriculaSuspendida' | 'MatriculaFinalizada';
-
+// Unión discriminada para el estado de matrícula
 interface MatriculaActiva {
     tipo: "ACTIVA";
     asignaturas: Asignatura[];
@@ -32,6 +30,7 @@ interface MatriculaFinalizada {
     tipo: "FINALIZADA";
     notaMedia: number;
 }
+type EstadoMatricula = MatriculaActiva | MatriculaSuspendida | MatriculaFinalizada;
 
 function generarReporte(estado: EstadoMatricula) : string {
     switch (estado.tipo) {
