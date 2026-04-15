@@ -42,8 +42,7 @@ function generarReporte(estado: EstadoMatricula) : string {
             return `Matrícula finalizada con nota media: ${estado.notaMedia}`;
     default:
         const _exhaustiveCheck: never = estado;
-        return _exhaustiveCheck;
-
+        throw new Error(`Estado no soportado`);
         }
     }
 
